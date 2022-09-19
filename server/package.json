@@ -21,12 +21,16 @@
   "homepage": "https://github.com/meerkats-dev-team/meerkats-land#readme",
   "devDependencies": {
     "@types/express": "^4.17.14",
+    "@types/morgan": "^1.9.3",
     "@types/node": "^18.7.18",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.3"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.6.0",
+    "helmet": "^6.0.0",
+    "morgan": "^1.10.0"
   }
 }
