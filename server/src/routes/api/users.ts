@@ -1,12 +1,11 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
+import UserControllers from "../../controllers/user";
+
+const userControlles = new UserControllers
 
 const router = Router()
 
-router.get("/", (_req: Request, res: Response): void => {
-    res.json({
-        success: true,
-        message: "All users"
-    })
-})
+router.route('/').get(userControlles.getAllUsers)
+router.route('/register').post(userControlles.createNewUser)
 
 export default router
